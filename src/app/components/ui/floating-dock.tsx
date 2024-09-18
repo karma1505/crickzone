@@ -37,7 +37,12 @@ const FloatingDockMobile = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("fixed bottom-0 left-0 right-0 justify-around items-center bg-gray-50 dark:bg-white z-50 h-16", className)}>
+    <div
+      className={cn(
+        "fixed bottom-0 left-0 right-0 justify-around items-center bg-white/50 dark:bg-white/10 backdrop-blur-lg z-50 h-16",
+        className
+      )}
+    >
       {items.map((item) => (
         <Link
           href={item.href}
@@ -50,7 +55,6 @@ const FloatingDockMobile = ({
     </div>
   );
 };
-
 
 const FloatingDockDesktop = ({
   items,
@@ -65,7 +69,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-white px-4 pb-3 z-50",
+        "md:flex h-16 gap-4 items-end rounded-2xl bg-white/50 dark:bg-white/10 backdrop-blur-lg px-4 pb-3 z-50",
         className
       )}
     >

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { poppins } from "../fonts"; // Assuming you have the poppins font defined in this file
+import { poppins } from "../fonts"; 
 
 export const WelcomeSection = () => {
   return (
@@ -12,9 +12,9 @@ export const WelcomeSection = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-6xl sm:text-4xl font-bold text-gray-900"
+          className="text-6xl sm:text-5xl text-gray-900"
         >
-          Welcome To The Sporting Heart Of India.
+          WELCOME TO THE SPORTING HEART OF INDIA.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -30,9 +30,6 @@ export const WelcomeSection = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-8"
         >
-          <p className="text-base text-gray-900">
-            Crickzone connects cricket lovers through exciting tournaments. Join us to experience competitive cricket, celebrate wins, and enjoy the spirit of the game.
-          </p>
         </motion.div>
       </div>
     </section>

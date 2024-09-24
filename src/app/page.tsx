@@ -1,13 +1,20 @@
 import React from 'react';
 import Hero from './sections/hero'; 
 import { WelcomeSection } from './sections/WelcomeSection';
+import TournamentRegistrationForm from './sections/registration';
+import '../app/globals.css';
+import Footer from './sections/Footer';
 
-const Page = () => {
+const Page: React.FC = () => {
   return (
-    <main>
-      <Hero />
-      <WelcomeSection />
-    </main>
+    <div className="page-container">
+      <div className="page-content">
+        <Hero />
+        <WelcomeSection />
+        <TournamentRegistrationForm />
+        <Footer />
+      </div>
+    </div>
   );
 };
 

@@ -2,13 +2,14 @@
 import React from 'react';
 import { FloatingDockDemo } from '../components/navbar'; // Adjust path if needed
 import { IconChevronDown } from '@tabler/icons-react'; // Import the Icon
+import { poppins } from "../fonts";
 
 const Hero: React.FC = () => {
   return (
     <>
       <FloatingDockDemo />
 
-      <section className="relative flex items-center justify-center h-screen bg-cover bg-center">
+      <section className={`relative flex items-center justify-center h-screen bg-cover bg-center ${poppins.variable} font-poppins`}>
         <video
           autoPlay
           loop
@@ -23,7 +24,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <div className="relative z-10 text-center px-4 md:px-8 lg:px-16">
-          <h1 className="text-6xl md:text-6xl lg:text-8xl xl:text-9xl font-bold text-white">
+          <h1 className="text-6xl md:text-6xl lg:text-8xl xl:text-9xl text-white ease-in">
             CRICKZONE
           </h1>
           <p className="mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-200">

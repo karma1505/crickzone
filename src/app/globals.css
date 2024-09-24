@@ -22,6 +22,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: url('/cursorcustom.png'), default;
+}
+
+.custom-cursor {
+  cursor: url('/cursorcustom.png'), auto;
 }
 
 @layer utilities {

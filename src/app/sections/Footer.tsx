@@ -21,7 +21,7 @@ const Footer = () => {
               </motion.div>
             </Link>
             <p className="mt-4 text-sm">
-              Elevating your digital presence with cutting-edge solutions.
+              Elevating your on-pitch experience.
             </p>
             <div className="flex space-x-4 mt-6">
               <Link href="https://facebook.com" aria-label="Facebook">
@@ -46,9 +46,6 @@ const Footer = () => {
                 <Link href="/about" className="hover:text-white transition">About Us</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition">Services</Link>
-              </li>
-              <li>
                 <Link href="/contact" className="hover:text-white transition">Contact Us</Link>
               </li>
             </ul>
@@ -58,21 +55,20 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:info@yourdomain.com" className="hover:text-white transition">info@yourdomain.com</a>
+                <a href="mailto:info@yourdomain.com" className="hover:text-white transition">info@crickzone.com</a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="hover:text-white transition">+1234567890</a>
+                <a href="tel:+1234567890" className="hover:text-white transition">+91 99990-98900</a>
               </li>
               <li>
-                <address className="not-italic">123 Your Street, Your City</address>
+                <address className="not-italic">123 Connaught Place, New Delhi</address>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
-          <p>&copy; 2023 Your Company. All rights reserved.</p>
-          <p className="mt-2">Designed with ❤️ by Your Company</p>
+          <p>&copy; 2024 Crickzone. All rights reserved.</p>
         </div>
       </div>
     </footer>

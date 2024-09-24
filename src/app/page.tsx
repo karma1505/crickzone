@@ -4,6 +4,7 @@ import { WelcomeSection } from './sections/WelcomeSection';
 import TournamentRegistrationForm from './sections/registration';
 import '../app/globals.css';
 import Footer from './sections/Footer';
+import AboutUs from './sections/AboutUs';
 
 const Page: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Page: React.FC = () => {
       <div className="page-content">
         <Hero />
         <WelcomeSection />
+        <AboutUs />
         <TournamentRegistrationForm />
         <Footer />
       </div>

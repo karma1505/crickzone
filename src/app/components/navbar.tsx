@@ -6,7 +6,6 @@ import {
   IconPencil,
   IconHome,
   IconCamera,
-  IconTerminal2,
 } from "@tabler/icons-react";
 
 export function FloatingDockDemo() {
@@ -15,42 +14,35 @@ export function FloatingDockDemo() {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-6 w-6 sm:h-8 sm:w-8 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Gallery",
       icon: (
-        <IconCamera className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconCamera className="h-6 w-6 sm:h-8 sm:w-8 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Register",
       icon: (
-        <IconPencil className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPencil className="h-6 w-6 sm:h-8 sm:w-8 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-6 w-6 sm:h-8 sm:w-8 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "About Us",
       icon: (
-        <IconInfoCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconInfoCircle className="h-6 w-6 sm:h-8 sm:w-8 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -59,15 +51,14 @@ export function FloatingDockDemo() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
-        setIsVisible(true); // Show navbar when at the top
+        setIsVisible(true); 
       } else {
-        setIsVisible(false); // Hide navbar when scrolling down
+        setIsVisible(false); 
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -75,11 +66,14 @@ export function FloatingDockDemo() {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 w-full h-[10rem] flex items-center justify-center z-50 transition-opacity duration-300 ${
+      className={`fixed top-0 left-0 right-0 w-full h-[8rem] sm:h-[10rem] flex items-center justify-center z-50 transition-opacity duration-300 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      <FloatingDock mobileClassName="translate-y-20" items={links} />
+      <FloatingDock
+        mobileClassName="translate-y-16 sm:translate-y-20"
+        items={links}
+      />
     </div>
   );
 }

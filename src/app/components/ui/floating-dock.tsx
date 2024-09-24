@@ -39,7 +39,7 @@ const FloatingDockMobile = ({
   return (
     <div
       className={cn(
-        "fixed bottom-0 left-0 right-0 justify-around items-center bg-white/50 dark:bg-white/10 backdrop-blur-lg z-50 h-16",
+        "fixed bottom-0 left-0 right-0 flex flex-row justify-around items-center bg-white/50 dark:bg-white/10 backdrop-blur-lg z-50 h-16",
         className
       )}
     >
@@ -49,12 +49,13 @@ const FloatingDockMobile = ({
           key={item.title}
           className="h-10 w-10 flex items-center justify-center"
         >
-          <div className="h-4 w-4">{item.icon}</div>
+          <div className="h-6 w-6">{item.icon}</div> 
         </Link>
       ))}
     </div>
   );
 };
+
 
 const FloatingDockDesktop = ({
   items,
